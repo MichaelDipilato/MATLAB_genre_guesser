@@ -55,8 +55,7 @@ A confusion matrix will be plotted for every classifier using each of the featur
 - Prediction accuracy for each genre
 - Comparison between performance on clean vs noisy files
 
-The file below represents and example of a confusion matrix using MFCCs
-![Confusion matrix](confusion_matrix_example/matrix_plot.png)
+[Confusion matrix example](confusion_matrix_example/matrix_plot.png)
 
 ## Requirements
 This project requires the following MATLAB toolboxes:
