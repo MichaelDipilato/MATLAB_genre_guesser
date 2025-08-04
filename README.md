@@ -16,8 +16,8 @@ Each classifier uses two different feature sets:
 - Place your audio files into the data folder, which contains three subfolders. Do not rename them, the script will prompt you to enter the genre names at runtime
 
 Each genre folder contains:
-- train/, audio files useful for training the classifiers;
-- test/, audio files used by the classifier to guess the genre.
+- ```train/```, audio files useful for training the classifiers;
+- ```test/```, audio files used by the classifier to guess the genre.
 
 In order to get good results, it is recommended to use at least three different files in the train folder. These are empty, therefore I had to store some .gitkeep files in them.
 
