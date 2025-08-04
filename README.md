@@ -26,7 +26,7 @@ The Project.m file is the main one in which all of the other script are executed
 There is also a code subfolder that contains a set of useful functions for feature extraction.
 
 ## Noise testing
-I also added noise to music files (Add_noise.m script) in order to test the classifiers performance whith noisy files and to check how much noise impacts on their ability to guess.
+I also added noise (babble.wav file) to music files in the Add_noise.m script in order to test the classifiers performance whith noisy files and to check how much noise impacts on their ability to guess.
 
 ## Evaluation
 A confusion matrix will be plotted for every classifier using each of the feature sets. This matrix shows:
