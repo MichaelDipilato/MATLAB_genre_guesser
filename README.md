@@ -22,8 +22,30 @@ Each genre folder contains:
 In order to get good results, it is recommended to use at least three different files in the train folder. These are empty, therefore I had to store some .gitkeep files in them.
 
 ## Project structure
-The Project.m file is the main one in which all of the other script are executed. 
-There is also a code subfolder that contains a set of useful functions for feature extraction.
+```
+.
+├── Add_noise.m                    # Script to add babble noise to audio files
+├── Chroma_features.m              # Extracts Chroma-based features from audio
+├── MFCCs_and_Chroma_features.m    # Extracts both MFCCs and Chroma features
+├── MFCCs_features.m               # Extracts MFCCs only
+├── Project.m                      # Main script
+├── babble.wav                     # Babble noise sample
+├── README.md                      # Project documentation
+├── code/                          # Auxiliary functions for feature extraction and processing
+│   └── (helper functions)
+├── data/                          # Dataset organized by genre
+│   ├── first_genre/
+│   │   ├── train/                 # Training audio files for first genre
+│   │   └── test/                  # Testing audio files for first genre
+│   ├── second_genre/
+│   │   ├── train/
+│   │   └── test/
+│   └── third_genre/
+│       ├── train/
+│       └── test/
+└── confusion_matrix_example/      # Example output plots of confusion matrices
+    └── matrix_plot.png            # Sample image (can be replaced with your own)
+```
 
 ## Noise testing
 I also added noise (babble.wav file) to music files in the Add_noise.m script in order to test the classifiers performance whith noisy files and to check how much noise impacts on their ability to guess.
