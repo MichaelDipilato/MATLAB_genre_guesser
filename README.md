@@ -1,16 +1,41 @@
 # MATLAB Genre Guesser
 
-This MATLAB program will try to guess the music genre of some of your favourite songs!
-Just choose three different music genres, and then put the corresponding files in the right genre folder. Do not rename these folders: at the beginning of the script MATLAB will ask you to insert the genres.
+This MATLAB program attempts to guess the music genre of some of your favourite songs using machine learning techniques. It was developed as a project as part of the course of Sound and Music Computing at the University of Milan
 
-In every folder there is a "train" subfolder, which is useful in order to train the classifier, and the "test" subfolder, which is used by the classifier to actually guess the music genre.
-Speaking of classifiers, I've used two of them: the kNN (k-Nearest Neighbours) and the DT (Decision Tree).
-These use two different sets of features, the MFCCs (Mel Frequency Cepstral Coefficients; representation of the short-term power spectrum of a sound) and the Chroma. Chroma-based features, which are also referred to as "pitch class profiles", are a powerful tool for
-analyzing music whose pitches can be meaningfully categorized (often into twelve categories) and whose tuning approximates to the equal-tempered scale. 
-One main property of chroma features is that they capture harmonic and melodic characteristics of music.
+## Overview
+In this project, I've used two classifiers:
+ - kNN (k-Nearest Neighbours): compares a sample with the k most similar samples in the training set
+ - DT (Decision Tree): builds a tree-like model of decision
 
-The Project.m file is the main one in which all of the other script are executed. There is also a code subfolder that contains a set of useful functions for feature extraction.
+Each classifier uses two different feature sets:
+- MFCCs (Mel Frequency Cepstral Coefficients): representation of the short-term power spectrum of a sound
+- Chroma-based features: capture harmonic and melodic characteristics of music by mapping audio into twelve pitch classes, used for tonal music analysis
+
+## How it works
+- Choose three different music genres;
+- Place your audio files into the data folder, which contains three subfolders. Do not rename them, the script will prompt you to enter the genre names at runtime
+
+Each genre folder contains:
+- train/, audio files useful for training the classifiers;
+- test/, audio files used by the classifier to guess the genre.
+
+In order to get good results, it is recommended to use at least three different files in the train folder. These are empty, therefore I had to store some .gitkeep files in them.
+
+## Project structure
+The Project.m file is the main one in which all of the other script are executed. 
+There is also a code subfolder that contains a set of useful functions for feature extraction.
+
+## Noise testing
 I also added noise to music files (Add_noise.m script) in order to test the classifiers performance whith noisy files and to check how much noise impacts on their ability to guess.
 
-A confusion matrix will be plotted for every classifier using each of the feature sets. This matrix show how accurate the prediction was for every genre. It also allows to compare classifier performance by using
-either regular files or noisy files.
+## Evaluation
+A confusion matrix will be plotted for every classifier using each of the feature sets. This matrix shows:
+- Prediction accuracy for each genre
+- Comparison between performance on clean vs noisy files
+
+## Requirements
+This project requires the following MATLAB toolboxes:
+- Audio Toolbox
+- Signal Processing Toolbox
+- Statistics and Machine Learning Toolbox
+- DSP System Toolbox
