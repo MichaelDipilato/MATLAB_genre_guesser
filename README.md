@@ -11,6 +11,11 @@ Each classifier uses two different feature sets:
 - MFCCs (Mel Frequency Cepstral Coefficients): representation of the short-term power spectrum of a sound
 - Chroma-based features: capture harmonic and melodic characteristics of music by mapping audio into twelve pitch classes, used for tonal music analysis
 
+## Warning
+This project needs some helper functions that you can find on this GitHub repository: 
+[Original repository with helper functions](https://github.com/pikrakis/Introduction-to-Audio-Analysis---a-MATLAB-approach). 
+These functions are crucial for feature extraction process. You can place them in the ```code/``` folder.
+
 ## How it works
 - Choose three different music genres;
 - Place your audio files into the data folder, which contains three subfolders. Do not rename them, the script will prompt you to enter the genre names at runtime
