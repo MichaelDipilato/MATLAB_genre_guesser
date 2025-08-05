@@ -26,11 +26,12 @@ In order to get good results, it is recommended to use at least three different 
 .
 ├── Add_noise.m                    # Script to add babble noise to audio files
 ├── Chroma_features.m              # Extracts Chroma-based features from audio
+├── LICENSE                        # License file
 ├── MFCCs_and_Chroma_features.m    # Extracts both MFCCs and Chroma features
 ├── MFCCs_features.m               # Extracts MFCCs only
 ├── Project.m                      # Main script
-├── babble.wav                     # Babble noise sample
 ├── README.md                      # Project documentation
+├── babble.wav                     # Babble noise sample
 ├── code/                          # Auxiliary functions for feature extraction and processing
 │   └── (helper functions)
 ├── data/                          # Dataset organized by genre
