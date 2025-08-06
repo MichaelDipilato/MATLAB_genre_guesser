@@ -50,7 +50,9 @@ In order to get good results, it is recommended to use at least three different 
 │       ├── train/
 │       └── test/
 └── confusion_matrix_example/      # Example output plots of confusion matrices
-    └── matrix_plot.png            # Sample image (can be replaced with your own)
+    └── Chroma_confusion_matrix.png                      # Chroma confusion matrix image
+    └── MFCCs_and_chroma_confusion_matrix.png            # MFCCs and chroma confusion matrix image
+    └── MFCCs_confusion_matrix.png                       # MFCCs confusion matrix image
 ```
 
 ## Noise testing
